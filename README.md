@@ -1,5 +1,6 @@
-# Why I Built Snorby and the Future of Security Interfaces
-> A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
+# Snorby & Security Interfaces
+
+The slides and thoughts of a madman.
 
 ## View slides locally
 
