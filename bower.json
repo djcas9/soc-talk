@@ -1,0 +1,7 @@
+{
+  "name": "presentation-why-i-built-snorby-and-the-future-of-security-interfaces",
+  "version": "0.0.0",
+  "dependencies": {
+    "prism": "gh-pages"
+  }
+}

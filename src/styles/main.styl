@@ -1,0 +1,239 @@
+// New to Stylus? Check out http://learnboost.github.io/stylus
+// Use modern CSS thanks to Autoprefixer: https://github.com/ai/autoprefixer
+
+// Import CSS from "node_modules" and "bower_components"
+// thanks to Stylus' "import css" and "paths" options
+
+@import 'normalizecss/normalize.css'
+
+@import 'prism/themes/prism-okaidia.css'
+// Check out "bower_components/prism/themes/" for available themes
+
+// Style using Bespoke Classes: https://github.com/markdalgleish/bespoke-classes
+
+body{
+  font-family: 'Lato';
+}
+
+.bespoke-parent
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+.bespoke-scale-parent
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  pointer-events: none
+  .bespoke-active
+    pointer-events: auto
+
+.bespoke-slide
+  width: 640px
+  height: 480px
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-left: -(@width / 2)
+  margin-top: -(@height / 2)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.bespoke-inactive
+  opacity: 0
+  pointer-events: none
+
+.bespoke-bullet-inactive
+  opacity: 0
+  pointer-events: none
+
+.emphatic
+  background: #222
+  color: white
+
+.bespoke-progress-parent
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  height: .3vw
+
+.bespoke-progress-bar
+  position: absolute
+  height: 100%
+  background: rgba(0,0,0,0.3);
+  transition: width .6s ease
+
+h1 {
+  color: #FFF
+  font-weight: 100;
+}
+
+h1 b{
+  font-family: 'Satisfy', cursive;
+}
+
+h2 {
+  color: #FFF
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+h2 strong{
+  font-family: 'Satisfy', cursive;
+}
+
+h3 {
+  color: #FFF
+  font-weight: 100;
+}
+
+h4 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.0em;
+}
+
+h4 strong{
+  color: rgba(0,0,0,0.3);
+}
+
+h4 b{
+  color: rgba(0,0,0,0.5);
+}
+
+h4 em{
+  font-family: 'Satisfy', cursive;
+  color: rgba(0,0,0,0.7);
+}
+
+li{
+  color: rgba(0,0,0,0.5);
+}
+
+li a{
+  color: rgba(0,0,0,0.2);
+}
+
+li em{
+  font-family: 'Satisfy', serif;
+  font-weight: 400;
+  text-transform: none;
+  word-spacing: 0;
+  letter-spacing: 0;
+display: block;
+opacity: 1;
+}
+
+article.green{
+   background: #60d7a9 
+}
+
+article.blue{
+background: #7bb7fa;
+
+}
+
+article.orange{
+  background: #fdc162;  
+}
+
+article.red{
+background: #fd6a62;  
+}
+
+article.pink{
+  background: #f68dbb;
+}
+
+article.do-what-i-want{
+  background: #000 url(../images/cartman-i-do-what-i-want.jpg) no-repeat center center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+article.chill{
+  background: #000 url(../images/chill.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+article.chill2{
+  background: #000 url(../images/chill2.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+article.snorby{
+  background: #000 url(../images/snorby.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+article.dance{
+  background: #000 url(../images/dance.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+article.dance2{
+  background: #000 url(../images/dance2.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+article.omg{
+  background: #000 url(../images/omg.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+article.NO{
+  background: #000 url(../images/no.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+article.smurf{
+  background: #000 url(../images/smurf.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+article.question2{
+  background: #000 url(../images/question2.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+:not(pre) > code[class*="language-"], pre[class*="language-"]{
+  background: rgba(0, 0, 0, 0.61);  
+}

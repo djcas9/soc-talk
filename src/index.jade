@@ -1,0 +1,210 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Why I Built Snorby and the Future of Security Interfaces
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Satisfy' rel='stylesheet' type='text/css'>
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section(data-bespoke-state='blue')
+        h1 Snorby & Security Interfaces
+
+      section(data-bespoke-state='green')
+        h1 I'm Dustin Willis Webber
+        h3 aka <strong>@mephux</strong> on twitter.
+
+      section(data-bespoke-state='orange')
+        h4 
+          strong <strong>Who</strong> / <b>What</b> / <em>Why?</em>
+        ul
+          li Open source developer (Snorby, Komanda etc..)
+          li <em>Hipster?</em>
+          li Designer (application interfaces)
+          li I've built stuff you may have used. (Mandiant, Tenable...)
+          li Entrepreneur (working on my second company now)
+          li <strong>BUT</strong> most importantly...
+
+      section(data-bespoke-state='red')
+        h2 I'm overly opinionated <strong> but not ignorant</strong>
+
+      section(data-bespoke-state='do-what-i-want')
+
+      section(data-bespoke-state='pink')
+        h1 We got problems dawg.
+        ul
+          li Security has become a <strong>used car lot</strong>
+          li Useless metrics <strong>pollute</strong> our <strong>interfaces</strong>
+          li nothing has <strong>structure</strong>
+          li <strong>we</strong> are spinning in place
+          li <em>but chill... we'll get to that</em>
+
+      section(data-bespoke-state='chill2')
+
+      section(data-bespoke-state='blue')
+        h4 Snorby <em>All About Simplicity</em>
+        ul
+          li Born in 2009 while I hated my job.
+          li Open Source - For the love of it.
+          li Simple with a bit of structure
+          li Was designed for our clients. Explain...
+          li A lot of fun and how I learned to program
+
+      section(data-bespoke-state='snorby')
+
+      section(data-bespoke-state='red')
+        h1 For The Noobs
+        ul
+          li Reads IDS events from a database
+          li Simple (worthless?!?) metrics
+          li Plugin to view transcript and pcap data
+          li Easy to deploy - yes, it is.
+          li BASE replacment I guess.
+          li Not ugly <em>more important that you would think</em>
+
+      section(data-bespoke-state='orange')
+        h1 The <b>Good</b>
+        ul
+          li Classify Events
+          li Notes, Favorite & Remember
+          li Plugins (kinda?)
+          li Simple Time based metrics
+          li Reporting, mostly useful for export needs
+          li Not ugly <em>more important that you would think</em>
+
+      section(data-bespoke-state='green')
+        h1 The <b>Bad</b>
+        ul
+          li FUCKING WEB SCALE!@#!@#!@#!@#!@#!
+          li Database fails..
+          li Ruby/Rails
+          li Not Ugly... huh?
+
+      section(data-bespoke-state='pink')
+        h1 The Future of "Snorby"*
+        ul
+          li Go-lang (http://www.golang.org)
+          li WORKFLOW.. SRSLY.. THIS IS IMPORTANT
+          li i'm calm now.. we'll talk about that more later.
+          li Performance
+          li It's still going to be pretty
+          li Collaboration
+          li New Name, Project and new Reasons for making it.
+
+      section(data-bespoke-state="dance")
+        h1 It's Secret Still!
+
+      section(data-bespoke-state="red")
+        h1 WTF is Go?
+
+      section(data-bespoke-state="red")
+        h1 Well...
+        ul
+          li It's Amazing
+          li All about concurrency
+          li C type performance (kinda) but easy to write. Srsly (real talk).
+          li If you use python or ruby.. I suggest learning this instead.
+          li The language of the cloud
+          li Large community and growing..
+
+      section(data-bespoke-state="pink")
+        h1 Go <b>Channels</b>
+        pre
+          code.language-javascript.
+            package main
+            import "fmt"
+
+            func main() {
+                messages := make(chan string)
+                go func() { messages <- "ping" }()
+                msg := <-messages
+                fmt.Println(msg)
+            }
+
+      section(data-bespoke-state="blue")
+        h1 Channel <b>Buffering</b>
+        pre
+          code.language-javascript.
+            package main
+
+            import "fmt"
+
+            func main() {
+                messages := make(chan string, 2)
+
+                messages <- "buffered"
+                messages <- "channel"
+
+                fmt.Println(<-messages)
+                fmt.Println(<-messages)
+            }
+
+      section(data-bespoke-state="omg")
+        h1 OMG!!!!!!!!!
+
+      section(data-bespoke-state="pink")
+        h1 So, Yea... That's what's <b>up</b>.
+
+      section(data-bespoke-state='chill')
+      section(data-bespoke-state='dance2')
+
+      section(data-bespoke-state="pink")
+        h1 Question <b>#1</b>
+        ul
+          li Is the security software we buy garbage?
+          li or is it?
+          li I'm just asking questions!
+
+      section(data-bespoke-state='smurf')
+
+      section(data-bespoke-state="pink")
+        h1 Question <b>#2</b>
+        ul
+          li Cisco, paloalto, fireeye, Symantec.. fucking garbage?
+          li or is it?
+          li I'm just asking questions!
+
+
+      section(data-bespoke-state='question2')
+
+      section(data-bespoke-state="red")
+        h1 So, Beef with the current
+        ul
+          li Tables? Let's Talk.
+          li Unstructured data
+          li ... chill.. only in an Unstructured View
+          li Metrics.. we have science now y'all
+          li We have a job to do
+          li This isn't a Sunday drive.
+
+      section(data-bespoke-state="pink")
+        h1 TABLES... NO... bad designer!
+
+      section(data-bespoke-state='NO')
+
+      section(data-bespoke-state="orange")
+        h1 Tables != Efficient
+        ul
+          li Big Data.. BUZZWORD!!
+          li Does pagination make sense still?
+          li Filters.. It's like the new hot
+          li Splunk, Arcsight, Logstash..
+          li WORTHLESS - Unless you like wasting time.
+          li It's the applications problem to solve.
+
+      section(data-bespoke-state="green")
+        h1 Unstructured Data
+        ul
+          li Collect Everything... cool.
+          li Search anything... cool.
+          li get work done... fail.
+          li workflow... fail.
+          li context... fail.
+          li interface design fails.. OMG YES!
+
+    script(src='build/build.js')
