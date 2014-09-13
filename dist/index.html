@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Why I Built Snorby and the Future of Security Interfaces</title><link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Satisfy' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section data-bespoke-state="blue">
+        <h1>Snorby & Security Interfaces</h1>
+      </section>
+      <section data-bespoke-state="green">
+        <h1>I'm Dustin Willis Webber</h1>
+        <h3>aka <strong>@mephux</strong> on twitter.</h3>
+      </section>
+      <section data-bespoke-state="orange">
+        <h4><strong><strong>Who</strong> / <b>What</b> / <em>Why?</em></strong></h4>
+        <ul>
+          <li>Open source developer (Snorby, Komanda etc..)</li>
+          <li><em>Hipster?</em></li>
+          <li>Designer (application interfaces)</li>
+          <li>I've built stuff you may have used. (Mandiant, Tenable...)</li>
+          <li>Entrepreneur (startups and stuff)</li>
+          <li><strong>BUT</strong> most importantly...</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="red">
+        <h2>I'm overly opinionated <strong> but not ignorant</strong></h2>
+      </section>
+      <section data-bespoke-state="do-what-i-want"></section>
+      <section data-bespoke-state="pink">
+        <h1>We got problems dawg.</h1>
+        <ul>
+          <li>Security has become a <strong>used car lot</strong></li>
+          <li>Useless metrics <strong>pollute</strong> our <strong>interfaces</strong></li>
+          <li>nothing has <strong>structure</strong></li>
+          <li><strong>we</strong> are spinning in place</li>
+          <li><em>but chill... we'll get to that</em></li>
+        </ul>
+      </section>
+      <section data-bespoke-state="chill2"></section>
+      <section data-bespoke-state="blue">
+        <h4>Snorby <em>All About Simplicity</em></h4>
+        <ul>
+          <li>Born in 2009 while I hated my job.</li>
+          <li>Open Source - For the love of it.</li>
+          <li>Simple with a bit of structure</li>
+          <li>Was designed for our clients. Explain...</li>
+          <li>A lot of fun and how I learned to program</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="snorby"></section>
+      <section data-bespoke-state="red">
+        <h1>For The <b>Noobs</b></h1>
+        <ul>
+          <li>Reads IDS events from a database</li>
+          <li>Simple (worthless?!?) metrics</li>
+          <li>Plugin to view transcript and pcap data</li>
+          <li>Easy to deploy - yes, it is.</li>
+          <li>BASE replacment I guess.</li>
+          <li>Not ugly <em>more important than you would think</em></li>
+        </ul>
+      </section>
+      <section data-bespoke-state="orange">
+        <h1>The <b>Good</b></h1>
+        <ul>
+          <li>Classify Events</li>
+          <li>Notes, Favorite & Remember</li>
+          <li>Plugins (kinda?)</li>
+          <li>Simple Time based metrics</li>
+          <li>Reporting, mostly useful for export needs</li>
+          <li>Not ugly <em>more important than you would think</em></li>
+        </ul>
+      </section>
+      <section data-bespoke-state="green">
+        <h1>The <b>Bad</b></h1>
+        <ul>
+          <li>FUCKING WEB SCALE!@#!@#!@#!@#!@#!</li>
+          <li>Database fails...</li>
+          <li>Ruby/Rails</li>
+          <li>Not Ugly... huh?</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="pink">
+        <h1>The Future of "<i>Snorby</i>"</h1>
+        <ul>
+          <li>Go-lang (http://www.golang.org)</li>
+          <li>WORKFLOW.. SRSLY.. THIS IS IMPORTANT</li>
+          <li>i'm calm now.. we'll talk about that more later.</li>
+          <li>Performance</li>
+          <li>It's still going to be pretty</li>
+          <li>Collaboration</li>
+          <li>New Name, Project and new Reasons for making it.</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="dance">
+        <h1>It's <b>Secret</b> Still!</h1>
+      </section>
+      <section data-bespoke-state="red">
+        <h1>WTF is <strong>Go</strong>?</h1>
+      </section>
+      <section data-bespoke-state="red">
+        <h1>Well...</h1>
+        <ul>
+          <li>It's Amazing</li>
+          <li>All about concurrency</li>
+          <li>C type performance (kinda) but easy to write. Srsly (real talk).</li>
+          <li>If you use python or ruby.. I suggest learning this instead.</li>
+          <li>The language of the cloud</li>
+          <li>Large community and growing..</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="pink">
+        <h1>Go <b>Channels</b></h1>
+        <pre><code class="language-javascript">package main
+import "fmt"
+
+func main() {
+    messages := make(chan string)
+    go func() { messages <- "ping" }()
+    msg := <-messages
+    fmt.Println(msg)
+}
+</code></pre>
+      </section>
+      <section data-bespoke-state="blue">
+        <h1>Channel <b>Buffering</b></h1>
+        <pre><code class="language-javascript">package main
+
+import "fmt"
+
+func main() {
+    messages := make(chan string, 2)
+    
+    messages <- "buffered"
+    messages <- "channel"
+    
+    fmt.Println(<-messages)
+    fmt.Println(<-messages)
+}
+</code></pre>
+      </section>
+      <section data-bespoke-state="omg">
+        <h1>OMG!!!</h1>
+      </section>
+      <section data-bespoke-state="pink">
+        <h1>So, Yea... That's what's <b>up</b>.</h1>
+      </section>
+      <section data-bespoke-state="chill"></section>
+      <section data-bespoke-state="pink">
+        <h1>Question <b>#1</b></h1>
+        <ul>
+          <li>Is the security software we buy garbage?</li>
+          <li>or is it?</li>
+          <li><strong>I'm just asking questions!</strong></li>
+        </ul>
+      </section>
+      <section data-bespoke-state="smurf"></section>
+      <section data-bespoke-state="pink">
+        <h1>Question <b>#2</b></h1>
+        <ul>
+          <li>Did large security companies destroy your industry </li>
+          <li>with bullshit marketing and shitty products?</li>
+          <li>or did they?</li>
+          <li><strong>I'm just asking questions!</strong></li>
+        </ul>
+      </section>
+      <section data-bespoke-state="question2"></section>
+      <section data-bespoke-state="red">
+        <h1>So, <b>Beef</b> with the current</h1>
+        <ul>
+          <li>Tables? Let's Talk.</li>
+          <li>Unstructured data</li>
+          <li>... chill.. only in an Unstructured View</li>
+          <li>Metrics.. we have science now y'all</li>
+          <li>We have a job to do</li>
+          <li>This isn't a Sunday drive.</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="pink">
+        <h1><strong>TABLES</strong>... NO... bad designer!</h1>
+      </section>
+      <section data-bespoke-state="NO"></section>
+      <section data-bespoke-state="orange">
+        <h1>Tables <strong>!=</strong> Efficient</h1>
+        <ul>
+          <li>Big Data.. BUZZWORD!!</li>
+          <li>Does pagination make sense still?</li>
+          <li>Filters.. It's like the new hot</li>
+          <li>Splunk, Arcsight, kibana..</li>
+          <li>WORTHLESS - Unless you like wasting time.</li>
+          <li>It's the applications problem to solve.</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="green">
+        <h1><b>Unstructured</b> Data</h1>
+        <ul>
+          <li>Collect Everything... cool.</li>
+          <li>Search anything... cool.</li>
+          <li>get work done... fail.</li>
+          <li>workflow... fail.</li>
+          <li>context... fail.</li>
+          <li>interface design fails.. OMG YES!</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="blue">
+        <h1><strong>Work</strong><b>Flow</b></h1>
+        <ul>
+          <li>X + Y = ???</li>
+          <li>Track The Incident</li>
+          <li>Metrics and History</li>
+          <li>Parallelism</li>
+          <li>Reporting Becomes Simple </li>
+        </ul>
+      </section>
+      <section data-bespoke-state="blue">
+        <h1><b>Context</b></h1>
+        <ul>
+          <li>X + Y = ??? <i>same concept</i></li>
+          <li>Designed To Search - Not Connect </li>
+          <li>pivoting</li>
+          <li>A lot can be automated </li>
+          <li>Storytelling </li>
+        </ul>
+      </section>
+      <section data-bespoke-state="green">
+        <h1>Tell a <b>Story</b></h1>
+        <ul>
+          <li>design your interface to tell a story </li>
+          <li>steps to follow for value add </li>
+          <li>lead the user and push a process</li>
+          <li>don't over do it</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="red">
+        <h1>SAVE <b>TIME</b></h1>
+        <ull>
+          <li>More Reporting and Less Searching </li>
+          <li>Visualizations need to be interpreted (more) </li>
+          <li>Wordflow, Context and Process speed up response</li>
+          <li>We are going the wrong way.</li>
+        </ull>
+      </section>
+      <section data-bespoke-state="orange">
+        <h1><b>current</b> trends </h1>
+        <ul>
+          <li>Search, Search.. more search.. all the data </li>
+          <li>Store all your structured and unstructured data! </li>
+          <li>General search and display interfaces</li>
+          <li>Dynamic charts by type.</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="blue">
+        <h1>My <b>philosophy</b> on this</h1>
+      </section>
+      <section data-bespoke-state="blue">
+        <h1><b>Tools</b> VS <b>Applications</b></h1>
+        <ul>
+          <li>Tools: search - Applications: find</li>
+          <li>Tools: export - Applications: create </li>
+          <li>Tools: Empower - Applications: Have Power </li>
+          <li>Both are great in the right situations </li>
+        </ul>
+      </section>
+      <section data-bespoke-state="green">
+        <h1><b>Science</b> & <strong>Stuff</strong></h1>
+        <ul>
+          <li>behavioral profiling </li>
+          <li>pattern anomalies </li>
+          <li>Connecting the right bits </li>
+          <li>ultimately producing better results</li>
+          <li>false positives</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="red">
+        <h1><strong>wtf</strong> does this have </h1>
+        <h1>to do with <b>interfaces</b>?</h1>
+      </section>
+      <section data-bespoke-state="dance2"></section>
+      <section data-bespoke-state="red">
+        <h1><b>everything</b> </h1>
+      </section>
+      <section data-bespoke-state="red">
+        <h1>Your <strong>Interface</strong> Sucks</h1>
+        <ul>
+          <li>If you don't have the right data to show.</li>
+          <li>If you simply return data and walk away</li>
+          <li>If you don't offer value outside of storage</li>
+          <li>If your metrics are ridiculous *cough*Snorby*cough*</li>
+          <li>A good interface has nothing to do with design</li>
+          <li>but trust me.. its still very important too.</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="orange">
+        <h1>Ok, back to <b>Snorby</b></h1>
+      </section>
+      <section data-bespoke-state="blue">
+        <h1>Lessons <b>Learned</b> </h1>
+        <ul>
+          <li>Finding problems to solve is not always easy</li>
+          <li>There is a lot of room for more applications in OSS</li>
+          <li>Workflow needs a bigger spotlight imho.</li>
+          <li>Answer questions before they are asked (if possible)</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="green">
+        <h1>So, security <strong>interface</strong> design</h1>
+        <ul>
+          <li>Should be foced around a process</li>
+          <li>Should filter and ask questions vs paging data</li>
+          <li>Should still have metrics and dashboard but with more insight</li>
+          <li>Should use new technology and mathematics to focus your telescope</li>
+          <li>Should be ready for collaboration</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="blue">
+        <h1><b>Questions?</b></h1>
+      </section>
+    </article>
+    <script src="build/build.js"></script>
+  </body>
+</html>
